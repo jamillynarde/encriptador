@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Encriptador de texto</h1>
+            <label for="text">Texto:</label>
+            <textarea id="text" rows="4" placeholder="Digite seu texto..."></textarea>
+    
+            <div class="warning">
+                <span class="warning-icon">&#9888;</span>
+                <span>Apenas letras minúsculas e sem acento.</span>
+            </div>
+    
+            <label for="operation">Operação:</label>
+            <div class="buttons-container">
+                <button onclick="encrypt()">Criptografar</button>
+                <button onclick="decrypt()">Descriptografar</button>
+            </div>
+    
+            <label for="output">Resultado:</label>
+            <textarea id="output" rows="4" readonly></textarea>
+    
+            <div class="buttons-container">
+                <button id="copyButton" onclick="copyToClipboard()">Copiar</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="Mobile encryption-rafiki.png" alt="texto" style="width: 100%;">
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
